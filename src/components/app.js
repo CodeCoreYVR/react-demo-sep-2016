@@ -1,5 +1,8 @@
 // You must always import React in a component file
 import React from 'react';
+
+// Component NAMES must always be CAPITALIZED!
+
 // 👇 relative import. After from, make sure to write the path
 // beginning from the current file's path
 import HelloWorld from './hello-world';
@@ -8,25 +11,27 @@ import HelloWorld from './hello-world';
 // variable that references the imported code from the module
 // following `from`
 import Square from './square';
+import Rectangle from './rectangle';
 
 // export default below is similar to
 // module.exports = function (props) { ...
 export default function (props) {
   // kebab-case CSS properties become camelCase
   // the values of CSS properties must be strings
-  var style = {
+  var appStyle = {
     display: 'flex',
     flexFlow: 'column',
     alignItems: 'center'
   }
 
   return (
-    <div className='App' style={style}>
+    <div className='App' style={appStyle}>
       {/* This is how we comment in jsx */}
       {/* <HelloWorld name="Babs McButterson" /> */}
       <HelloWorld name="Finkle Butterwoth" />
       <HelloWorld name="Doddy Derington the III" />
       <Square />
+      <Rectangle />
     </div>
   )
 }
