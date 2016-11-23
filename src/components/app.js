@@ -13,6 +13,7 @@ import HelloWorld from './hello-world';
 import Square from './square';
 import Rectangle from './rectangle';
 import Shape from './shape';
+import Greetings from './greetings';
 
 // export default below is similar to
 // module.exports = function (props) { ...
@@ -34,6 +35,8 @@ export default function (props) {
       <Square />
       <Rectangle />
       <Shape type='circle' color='Red' />
+      <Greetings
+       names={['Jean', 'Xavier', 'Pumpernickle']} />
     </div>
   )
 }
