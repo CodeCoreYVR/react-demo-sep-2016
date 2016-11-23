@@ -12,6 +12,7 @@ import HelloWorld from './hello-world';
 // following `from`
 import Square from './square';
 import Rectangle from './rectangle';
+import Shape from './shape';
 
 // export default below is similar to
 // module.exports = function (props) { ...
@@ -32,6 +33,7 @@ export default function (props) {
       <HelloWorld name="Doddy Derington the III" />
       <Square />
       <Rectangle />
+      <Shape type='circle' color='Red' />
     </div>
   )
 }

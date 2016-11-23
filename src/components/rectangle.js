@@ -13,9 +13,9 @@ export default function (props) {
   }
   return (
     <div className='Rectangle' style={style}>
-      <Square name='LightBlue'/>
-      <Square name='SkyBlue'/>
-      <Square name='DeepSkyBlue'/>
+      <Square color='LightBlue'/>
+      <Square color='SkyBlue'/>
+      <Square color='DeepSkyBlue'/>
     </div>
   )
 }
