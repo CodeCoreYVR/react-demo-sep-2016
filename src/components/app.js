@@ -34,7 +34,7 @@ export default function (props) {
       <HelloWorld name="Doddy Derington the III" />
       <Square />
       <Rectangle />
-      <Shape type='circle' color='Red' />
+      <Shape type='circle' colors={['Blue', 'Green', 'Yellow', 'Pink']} />
       <Greetings
        names={['Jean', 'Xavier', 'Pumpernickle']} />
     </div>
