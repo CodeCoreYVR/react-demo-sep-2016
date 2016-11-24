@@ -15,6 +15,7 @@ import Rectangle from './rectangle';
 import Shape from './shape';
 import Greetings from './greetings';
 import Timer from './timer';
+import StopWatch from './stop-watch';
 
 // export default below is similar to
 // module.exports = function (props) { ...
@@ -30,6 +31,7 @@ export default function (props) {
   return (
     <div className='App' style={appStyle}>
       <Timer />
+      <StopWatch />
       {/* This is how we comment in jsx */}
       {/* <HelloWorld name="Babs McButterson" /> */}
       <HelloWorld name="Finkle Butterwoth" />
