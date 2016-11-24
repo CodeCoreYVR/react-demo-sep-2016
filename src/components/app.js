@@ -5,7 +5,7 @@ import React from 'react';
 
 // 👇 relative import. After from, make sure to write the path
 // beginning from the current file's path
-import HelloWorld from './hello-world';
+import HelloWorld, {HelloWorldAsFunc} from './hello-world';
 
 // the name that follows `import` will become a javascript
 // variable that references the imported code from the module
