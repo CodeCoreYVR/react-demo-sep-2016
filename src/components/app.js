@@ -16,6 +16,15 @@ import Shape from './shape';
 import Greetings from './greetings';
 import Timer from './timer';
 import StopWatch from './stop-watch';
+import TaskList from './task-list';
+
+const LIST = [
+  {name: 'Get milk', done: false},
+  {name: 'Sleep more', done: false},
+  {name: 'Finish final project', done: false},
+  {name: 'Eat lunch', done: true}
+
+]
 
 // export default below is similar to
 // module.exports = function (props) { ...
@@ -32,6 +41,7 @@ export default function (props) {
     <div className='App' style={appStyle}>
       <Timer />
       <StopWatch />
+      <TaskList list={LIST} />
       {/* This is how we comment in jsx */}
       {/* <HelloWorld name="Babs McButterson" /> */}
       <HelloWorld name="Finkle Butterwoth" />
